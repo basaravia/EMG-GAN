@@ -9,3 +9,5 @@ pandas
 pathlib
 dtaidistance
 fastdtw
+sklearn
+PyWavelets

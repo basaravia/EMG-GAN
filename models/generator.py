@@ -24,7 +24,7 @@
 # Version by:  Rafael Anicet Zanini
 # Github:      https://github.com/larocs/EMG-GAN
 
-from keras.utils import plot_model
+from tensorflow.keras.utils import plot_model
 from keras.layers import Input, Dense, Reshape, Flatten, Dropout, Lambda
 from keras.layers import BatchNormalization, Activation, ZeroPadding2D
 from keras.layers import Input, Dense, Flatten, Activation, Dropout, LSTM, RepeatVector, TimeDistributed, ConvLSTM2D, GRU
@@ -63,7 +63,7 @@ class Generator():
             z (tensor): sampled latent vector
         """
         input_ = args
-        sliding_window = tf.contrib.signal.frame(
+        sliding_window = tf.signal.frame(
             input_,
             self.sliding_window,
             1,#steps

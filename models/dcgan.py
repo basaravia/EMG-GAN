@@ -27,7 +27,8 @@
 
 from __future__ import print_function, division
 
-from keras.optimizers import RMSprop, Adam
+#from keras.optimizers import RMSprop, Adam
+from tensorflow.keras.optimizers import RMSprop,Adam
 from keras import Model, Sequential
 from keras.layers import Input
 import keras.backend as K
