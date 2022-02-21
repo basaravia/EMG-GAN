@@ -12,3 +12,4 @@ fastdtw==0.3.4
 sklearn==0.0
 PyWavelets==1.2.0
 ipykernel==6.9.1
+pydot==1.2.4
